@@ -3,7 +3,7 @@
   <Class Name="Entidades.Usuarios.Usuario" Collapsed="true">
     <Position X="5.75" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>QAAAAkAQAAYAEACAAAQggAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Usuarios\Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -31,7 +31,7 @@
   <Class Name="Entidades.PetShop" Collapsed="true">
     <Position X="5.75" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AIAAQACAAAAAIAAAgaAAAAAAAAAAAAAAAABCAAAEQEA=</HashCode>
       <FileName>Estaticas\PetShop.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -66,7 +66,7 @@
   <Class Name="Entidades.Estaticas.Validaciones" Collapsed="true">
     <Position X="0.5" Y="2.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAAAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Validaciones.cs</FileName>
     </TypeIdentifier>
   </Class>

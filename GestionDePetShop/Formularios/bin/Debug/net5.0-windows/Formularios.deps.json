@@ -7,14 +7,27 @@
   "targets": {
     ".NETCoreApp,Version=v5.0": {
       "Formularios/1.0.0": {
+        "dependencies": {
+          "Entidades": "1.0.0"
+        },
         "runtime": {
           "Formularios.dll": {}
+        }
+      },
+      "Entidades/1.0.0": {
+        "runtime": {
+          "Entidades.dll": {}
         }
       }
     }
   },
   "libraries": {
     "Formularios/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Entidades/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""

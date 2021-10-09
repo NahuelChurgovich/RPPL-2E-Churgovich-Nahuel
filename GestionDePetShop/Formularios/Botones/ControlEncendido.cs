@@ -25,7 +25,7 @@ namespace Formularios.Botones
         #region Propiedades
 
         [Category("Control Encendido Avanzado")]
-        public Color OnBackColor
+        public Color FondoEncendidoColor
         {
             get
             {
@@ -40,7 +40,7 @@ namespace Formularios.Botones
         }
 
         [Category("Control Encendido Avanzado")]
-        public Color OnToggleColor
+        public Color BarraEncendidaColor
         {
             get
             {
@@ -55,7 +55,7 @@ namespace Formularios.Botones
         }
 
         [Category("Control Encendido Avanzado")]
-        public Color OffBackColor
+        public Color FondoApagadoColor
         {
             get
             {
@@ -70,7 +70,7 @@ namespace Formularios.Botones
         }
 
         [Category("Control Encendido Avanzado")]
-        public Color OffToggleColor
+        public Color BarraApagadaColor
         {
             get
             {
@@ -100,7 +100,7 @@ namespace Formularios.Botones
 
         [Category("Control Encendido Avanzado")]
         [DefaultValue(true)]
-        public bool SolidStyle
+        public bool EstiloSolido
         {
             get
             {
@@ -118,7 +118,7 @@ namespace Formularios.Botones
         #region Constructores
         public ControlEncendido()
         {
-            this.MinimumSize = new Size(45, 22);
+            this.MinimumSize = new Size(35, 12);
         }
         #endregion
 
@@ -150,7 +150,7 @@ namespace Formularios.Botones
                 if (estiloSolido)
                     pevent.Graphics.FillPath(new SolidBrush(fondoEncendidoColor), GetRutaFigura());
                 else pevent.Graphics.DrawPath(new Pen(fondoEncendidoColor, 2), GetRutaFigura());
-                //dibijando barra
+                //dibujando barra
                 pevent.Graphics.FillEllipse(new SolidBrush(barraEncendidaColor),
                     new Rectangle(this.Width - this.Height + 1, 2, tamanioBarra, tamanioBarra));
             }
@@ -160,7 +160,7 @@ namespace Formularios.Botones
                 if (estiloSolido)
                     pevent.Graphics.FillPath(new SolidBrush(fondoApagadoColor), GetRutaFigura());
                 else pevent.Graphics.DrawPath(new Pen(fondoApagadoColor, 2), GetRutaFigura());
-                //dibijando barra
+                //dibujando barra
                 pevent.Graphics.FillEllipse(new SolidBrush(barraApagadaColor),
                     new Rectangle(2, 2, tamanioBarra, tamanioBarra));
             }

@@ -31,24 +31,83 @@ namespace Formularios.Generales
             //PONER EL MEGAFONO Y AVERIGUAR COMO MANEJAR EL VOLUMEN DE REPRODUCCION
         }
 
-        protected virtual void chkNocturno_CheckedChanged(object sender, EventArgs e)
+        private void chkNocturno_CheckedChanged(object sender, EventArgs e)
         {
             if (chkNocturno.Checked)
             {
-                this.BackColor = Color.FromArgb(64,64,64);
+                this.BackColor = Color.FromArgb(64, 64, 64);
                 lblTema.Text = "Claro";
-                lblTema.ForeColor = Color.White;
-                btnSalir.BackgroundImage = Properties.Resources.boton2dark;
-                btnSalir.ForeColor = Color.White;
+                BotonOscuro(btnSalir);
             }
             else
             {
                 this.BackColor = Color.RoyalBlue;
                 lblTema.Text = "Oscuro";
-                lblTema.ForeColor = Color.Black;
-                btnSalir.BackgroundImage = Properties.Resources.boton2;
-                btnSalir.ForeColor = Color.Black;
+                BotonClaro(btnSalir);
             }
         }
+
+        protected virtual void BotonClaro(Button boton)
+        {
+            boton.BackgroundImage = Properties.Resources.boton2;
+            boton.ForeColor = Color.Black;
+            boton.FlatAppearance.BorderColor = Color.RoyalBlue;
+            boton.FlatAppearance.BorderSize = 1;
+            boton.FlatAppearance.MouseDownBackColor = Color.RoyalBlue;
+            boton.FlatAppearance.MouseOverBackColor = Color.RoyalBlue;
+        }
+        protected virtual void BotonOscuro(Button boton)
+        {
+            boton.BackgroundImage = Properties.Resources.boton2dark;
+            boton.ForeColor = Color.White;
+            boton.FlatStyle = FlatStyle.Flat;
+            boton.FlatAppearance.BorderColor = Color.FromArgb(64, 64, 64);
+            boton.FlatAppearance.BorderSize = 1;
+            boton.FlatAppearance.MouseDownBackColor = Color.FromArgb(64, 64, 64);
+            boton.FlatAppearance.MouseOverBackColor = Color.FromArgb(64, 64, 64);
+        }
+        protected virtual void CajaTextoClaro(TextBox caja)
+        {
+            caja.BackColor = Color.CornflowerBlue;
+            caja.ForeColor = Color.Black;
+        }
+        protected virtual void CajaTextoClaro(TextBox caja, TextBox caja2)
+        {
+            caja.BackColor = Color.CornflowerBlue;
+            caja2.BackColor = Color.CornflowerBlue;
+            caja.ForeColor = Color.Black;
+            caja2.ForeColor = Color.Black;
+        }
+        protected virtual void CajaTextoClaro(TextBox caja, TextBox caja2, TextBox caja3)
+        {
+            caja.BackColor = Color.CornflowerBlue;
+            caja2.BackColor = Color.CornflowerBlue;
+            caja3.BackColor = Color.CornflowerBlue;
+            caja.ForeColor = Color.Black;
+            caja2.ForeColor = Color.Black;
+            caja3.ForeColor = Color.Black;
+        }
+        protected virtual void CajaTextoOscuro(TextBox caja)
+        {
+            caja.BackColor = Color.DarkGray;
+            caja.ForeColor = Color.WhiteSmoke;
+        }
+        protected virtual void CajaTextoOscuro(TextBox caja, TextBox caja2)
+        {
+            caja.BackColor = Color.DarkGray;
+            caja2.BackColor = Color.DarkGray;
+            caja.ForeColor = Color.WhiteSmoke;
+            caja2.ForeColor = Color.WhiteSmoke;
+        }
+        protected virtual void CajaTextoOscuro(TextBox caja, TextBox caja2, TextBox caja3)
+        {
+            caja.BackColor = Color.DarkGray;
+            caja2.BackColor = Color.DarkGray;
+            caja3.BackColor = Color.DarkGray;
+            caja.ForeColor = Color.WhiteSmoke;
+            caja2.ForeColor = Color.WhiteSmoke;
+            caja3.ForeColor = Color.WhiteSmoke;
+        }
+
     }
 }
