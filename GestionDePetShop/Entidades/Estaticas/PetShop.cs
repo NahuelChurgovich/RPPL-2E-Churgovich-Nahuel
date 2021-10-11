@@ -135,15 +135,6 @@ namespace Entidades
         }
 
 
-        public static bool BorrarUsuario(int indice)
-        {
-            if (usuarios.Remove(usuarios[indice]))
-            {
-                return true;
-            }
-            return false;
-        }
-
         //public static bool CrearUsuario(Usuario ingresante, Usuario usuarioACrear)
         //{
         //    if (ingresante.Tipo is EUsuarios.SuperUsuario && !BuscarUsuario(usuarioACrear))
@@ -254,5 +245,6 @@ namespace Entidades
         }
 
         #endregion
-    }
+
+           }
 }

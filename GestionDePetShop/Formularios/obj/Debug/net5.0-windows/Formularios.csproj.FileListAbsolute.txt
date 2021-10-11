@@ -20,3 +20,5 @@ C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-C
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Formularios\obj\Debug\net5.0-windows\Formularios.genruntimeconfig.cache
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Formularios\bin\Debug\net5.0-windows\Entidades.dll
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Formularios\bin\Debug\net5.0-windows\Entidades.pdb
+C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Formularios\obj\Debug\net5.0-windows\Formularios.FormControles.resources
+C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Formularios\obj\Debug\net5.0-windows\Formularios.csproj.CopyComplete

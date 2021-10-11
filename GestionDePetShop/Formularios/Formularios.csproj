@@ -7,7 +7,9 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="ABM\" />
+    <Compile Remove="ABM\**" />
+    <EmbeddedResource Remove="ABM\**" />
+    <None Remove="ABM\**" />
   </ItemGroup>
 
   <ItemGroup>

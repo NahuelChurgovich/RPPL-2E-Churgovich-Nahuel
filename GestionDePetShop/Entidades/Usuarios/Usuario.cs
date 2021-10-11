@@ -1,8 +1,5 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
+﻿using System.Collections.Generic;
 using System.Text;
-using System.Threading.Tasks;
 
 using Entidades.Estaticas;
 
@@ -134,7 +131,31 @@ namespace Entidades.Usuarios
 
         #region Sobrecargas
 
+        public static bool operator +(List<Usuario> listaUsuarios, Usuario usuario)
+        {
+            foreach (Usuario usuarioAux in listaUsuarios)
+            {
+                if (usuario.cuil == usuarioAux.cuil)
+                {
+                    return false;
+                }
+            }
+            listaUsuarios.Add(usuario);
+            return true;
+        }
 
+        public static bool operator -(List<Usuario> listaUsuarios, Usuario usuario)
+        {
+            foreach (Usuario usuarioAux in listaUsuarios)
+            {
+                if (usuario.cuil == usuarioAux.cuil)
+                {
+                    listaUsuarios.Remove(usuario);
+                    return true;
+                }
+            }
+            return false;
+        }
 
         #endregion
     }

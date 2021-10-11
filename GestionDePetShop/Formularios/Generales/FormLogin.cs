@@ -107,9 +107,8 @@ namespace Formularios
                 {
                     bandera = 1;
 
-                    MessageBox.Show("Entraste");
-                    //FormControles frmControles = new FormControles(u);
-                    //frmControles.Show();
+                    FormControles frmControles = new FormControles(u);
+                    frmControles.Show();
                     break;
 
                 }
