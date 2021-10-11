@@ -107,8 +107,8 @@ namespace Formularios
                 {
                     bandera = 1;
 
-                    FormControles frmControles = new FormControles(u);
-                    frmControles.Show();
+                    FormControles frmControles = new FormControles(u, chkNocturno.CheckState);
+                    frmControles.ShowDialog();
                     break;
 
                 }

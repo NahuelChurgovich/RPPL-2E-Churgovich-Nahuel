@@ -7,7 +7,7 @@
     <Compile Update="Generales\FormBase.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="Generales\FormControles.cs">
+    <Compile Update="FormControles.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Generales\FormLogin.cs">

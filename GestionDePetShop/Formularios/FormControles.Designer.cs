@@ -55,11 +55,11 @@ namespace Formularios
             // 
             // lblTema
             // 
-            this.lblTema.Location = new System.Drawing.Point(309, -2);
+            this.lblTema.Location = new System.Drawing.Point(319, -2);
             // 
             // chkNocturno
             // 
-            this.chkNocturno.Location = new System.Drawing.Point(309, 12);
+            this.chkNocturno.Location = new System.Drawing.Point(319, 12);
             this.chkNocturno.CheckedChanged += new System.EventHandler(this.chkNocturno_CheckedChanged);
             // 
             // btnModificarPetShop
@@ -369,6 +369,7 @@ namespace Formularios
             this.Controls.Add(this.btnModificarPetShop);
             this.Name = "FormControles";
             this.Text = "Controles";
+            this.Load += new System.EventHandler(this.FormControles_Load);
             this.Controls.SetChildIndex(this.btnModificarPetShop, 0);
             this.Controls.SetChildIndex(this.btnAgregarAdmin, 0);
             this.Controls.SetChildIndex(this.btnModificarAdmin, 0);
