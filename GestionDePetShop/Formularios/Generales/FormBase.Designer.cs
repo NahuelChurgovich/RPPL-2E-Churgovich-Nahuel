@@ -29,10 +29,12 @@ namespace Formularios.Generales
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmBase));
             this.btnSalir = new System.Windows.Forms.Button();
             this.lblTema = new System.Windows.Forms.Label();
             this.chkNocturno = new Formularios.Botones.ControlEncendido();
+            this.tmrInactivo = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // btnSalir
@@ -81,6 +83,12 @@ namespace Formularios.Generales
             this.chkNocturno.UseVisualStyleBackColor = true;
             this.chkNocturno.CheckedChanged += new System.EventHandler(this.chkNocturno_CheckedChanged);
             // 
+            // tmrInactivo
+            // 
+            this.tmrInactivo.Enabled = true;
+            this.tmrInactivo.Interval = 3000;
+            this.tmrInactivo.Tick += new System.EventHandler(this.tmrInactivo_Tick);
+            // 
             // FrmBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -111,5 +119,6 @@ namespace Formularios.Generales
         protected System.Windows.Forms.Button btnSalir;
         protected System.Windows.Forms.Label lblTema;
         protected Botones.ControlEncendido chkNocturno;
+        protected System.Windows.Forms.Timer tmrInactivo;
     }
 }

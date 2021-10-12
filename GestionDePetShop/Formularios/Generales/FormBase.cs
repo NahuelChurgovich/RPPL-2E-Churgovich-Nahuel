@@ -177,5 +177,10 @@ namespace Formularios.Generales
             caja4.ForeColor = Color.WhiteSmoke;
         }
 
+        private void tmrInactivo_Tick(object sender, EventArgs e)
+        {
+            tmrInactivo.Enabled = false;
+            this.Dispose();
+                    }
     }
 }

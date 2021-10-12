@@ -4,6 +4,12 @@
     <Compile Update="Botones\ControlEncendido.cs">
       <SubType>Component</SubType>
     </Compile>
+    <Compile Update="FormABMCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormABMUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Generales\FormBase.cs">
       <SubType>Form</SubType>
     </Compile>

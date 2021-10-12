@@ -25,18 +25,14 @@ namespace Formularios
             if (chkNocturno.Checked)
             {
                 BotonOscuro(btnModificarPetShop, btnInformeVentas, btnVender);
-                BotonOscuro(btnAgregarAdmin, btnModificarAdmin, btnBorrarAdmin);
-                BotonOscuro(btnAgregarEmpleado, btnModificarEmpleado, btnBorrarEmpleado);
-                BotonOscuro(btnAgregarCliente, btnModificarCliente, btnBorrarCliente);
-                BotonOscuro(btnAgregarProducto, btnModificarProducto, btnBorrarProducto);
+                BotonOscuro(btnAdministrarAdmin, btnAdministrarEmpleado, btnAdministrarCliente);
+                BotonOscuro(btnAdministrarProducto);
             }
             else
             {
                 BotonClaro(btnModificarPetShop, btnInformeVentas, btnVender);
-                BotonClaro(btnAgregarAdmin, btnModificarAdmin, btnBorrarAdmin);
-                BotonClaro(btnAgregarEmpleado, btnModificarEmpleado, btnBorrarEmpleado);
-                BotonClaro(btnAgregarCliente, btnModificarCliente, btnBorrarCliente);
-                BotonClaro(btnAgregarProducto, btnModificarProducto, btnBorrarProducto);
+                BotonClaro(btnAdministrarAdmin, btnAdministrarEmpleado, btnAdministrarCliente);
+                BotonClaro(btnAdministrarProducto);
             }
         }
 
@@ -62,54 +58,67 @@ namespace Formularios
             btnModificarPetShop.Enabled = true;
             btnInformeVentas.Enabled = false;
             btnVender.Enabled = false;
-            btnAgregarAdmin.Enabled = true;
-            btnModificarAdmin.Enabled = true;
-            btnBorrarAdmin.Enabled = true;
-            btnAgregarEmpleado.Enabled = false;
-            btnModificarEmpleado.Enabled = false;
-            btnBorrarEmpleado.Enabled = false;
-            btnAgregarCliente.Enabled = false;
-            btnModificarCliente.Enabled = false;
-            btnBorrarCliente.Enabled = false;
-            btnAgregarProducto.Enabled = false;
-            btnModificarProducto.Enabled = false;
-            btnBorrarProducto.Enabled = false;
+            btnAdministrarAdmin.Enabled = true;
+            btnAdministrarEmpleado.Enabled = false;
+            btnAdministrarProducto.Enabled = false;
+            btnAdministrarCliente.Enabled = false;
         }
         private void BotonesAdministrador()
         {
             btnModificarPetShop.Enabled = false;
             btnInformeVentas.Enabled = true;
             btnVender.Enabled = true;
-            btnAgregarAdmin.Enabled = false;
-            btnModificarAdmin.Enabled = false;
-            btnBorrarAdmin.Enabled = false;
-            btnAgregarEmpleado.Enabled = true;
-            btnModificarEmpleado.Enabled = true;
-            btnBorrarEmpleado.Enabled = true;
-            btnAgregarCliente.Enabled = true;
-            btnModificarCliente.Enabled = true;
-            btnBorrarCliente.Enabled = true;
-            btnAgregarProducto.Enabled = true;
-            btnModificarProducto.Enabled = true;
-            btnBorrarProducto.Enabled = true;
+            btnAdministrarAdmin.Enabled = false;
+            btnAdministrarEmpleado.Enabled = true;
+            btnAdministrarProducto.Enabled = true;
+            btnAdministrarCliente.Enabled = true;
         }
         private void BotonesEmpleado()
         {
             btnModificarPetShop.Enabled = false;
             btnInformeVentas.Enabled = false;
             btnVender.Enabled = true;
-            btnAgregarAdmin.Enabled = false;
-            btnModificarAdmin.Enabled = false;
-            btnBorrarAdmin.Enabled = false;
-            btnAgregarEmpleado.Enabled = false;
-            btnModificarEmpleado.Enabled = false;
-            btnBorrarEmpleado.Enabled = false;
-            btnAgregarCliente.Enabled = false;
-            btnModificarCliente.Enabled = false;
-            btnBorrarCliente.Enabled = false;
-            btnAgregarProducto.Enabled = true;
-            btnModificarProducto.Enabled = true;
-            btnBorrarProducto.Enabled = true;
+            btnAdministrarAdmin.Enabled = false;
+            btnAdministrarEmpleado.Enabled = false;
+            btnAdministrarProducto.Enabled = true;
+            btnAdministrarCliente.Enabled = false;
+        }
+
+        private void btnModificarPetShop_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Botón sin código");
+        }
+
+        private void btnInformeVentas_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Botón sin código");
+        }
+
+        private void btnVender_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Botón sin código");
+        }
+
+        private void btnAdministrarAdmin_Click(object sender, EventArgs e)
+        {
+            FormABMUsuario frmAdmin = new FormABMUsuario(chkNocturno.CheckState);
+            frmAdmin.ShowDialog();
+        }
+
+        private void btnAdministrarEmpleado_Click(object sender, EventArgs e)
+        {
+            FormABMUsuario frmEmpleado = new FormABMUsuario(chkNocturno.CheckState);
+            frmEmpleado.ShowDialog();
+        }
+
+        private void btnAdministrarProducto_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Botón sin código");
+        }
+
+        private void btnAdministrarCliente_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Botón sin código");
         }
     }
 }
