@@ -1,12 +1,35 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entidades.Estaticas
+﻿namespace Entidades.Estaticas
 {
-    class Productos
+    public sealed class Productos
     {
+        #region Atributos
+
+        private string nombre;
+        private string codigo;
+        private string marca;
+        private double costo;
+        private float margen;
+        private double precio;
+        private int cantidad;
+        private string descripcion;
+        private EProducto tipo;
+
+        #endregion
+
+
+
+
+        #region Enumerado
+        public enum EProducto
+        {
+            Alimentos,
+            Camas,
+            Farmacia,
+            Higiene,
+            Juguetes
+        }
+        #endregion
+
+
     }
 }

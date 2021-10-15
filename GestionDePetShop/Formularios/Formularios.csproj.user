@@ -7,7 +7,13 @@
     <Compile Update="FormABMCliente.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="FormABMProducto.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="FormABMUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="FormModificarPetShop.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="Generales\FormBase.cs">

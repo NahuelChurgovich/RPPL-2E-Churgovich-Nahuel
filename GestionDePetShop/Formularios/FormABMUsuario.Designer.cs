@@ -324,9 +324,6 @@ namespace Formularios
             this.Controls.SetChildIndex(this.txtAlias, 0);
             this.Controls.SetChildIndex(this.lblContrasenia, 0);
             this.Controls.SetChildIndex(this.txtContrasenia, 0);
-            this.Controls.SetChildIndex(this.btnSalir, 0);
-            this.Controls.SetChildIndex(this.lblTema, 0);
-            this.Controls.SetChildIndex(this.chkNocturno, 0);
             this.Controls.SetChildIndex(this.dgvDatos, 0);
             this.Controls.SetChildIndex(this.btnModificar, 0);
             this.Controls.SetChildIndex(this.btnBorrar, 0);
@@ -334,6 +331,9 @@ namespace Formularios
             this.Controls.SetChildIndex(this.lblBuscar, 0);
             this.Controls.SetChildIndex(this.txtBuscarUsuario, 0);
             this.Controls.SetChildIndex(this.btnBuscarUsuario, 0);
+            this.Controls.SetChildIndex(this.btnSalir, 0);
+            this.Controls.SetChildIndex(this.lblTema, 0);
+            this.Controls.SetChildIndex(this.chkNocturno, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();

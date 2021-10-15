@@ -30,27 +30,27 @@ namespace Formularios
         private void InitializeComponent()
         {
             this.btnBuscarUsuario = new System.Windows.Forms.Button();
-            this.txtBuscarUsuario = new System.Windows.Forms.TextBox();
+            this.txtBuscarCliente = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CUIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contrasenia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.txtContrasenia = new System.Windows.Forms.TextBox();
+            this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
-            this.txtAlias = new System.Windows.Forms.TextBox();
+            this.txtTelefono = new System.Windows.Forms.TextBox();
             this.lblTelefono = new System.Windows.Forms.Label();
-            this.txtCuil = new System.Windows.Forms.TextBox();
+            this.txtDni = new System.Windows.Forms.TextBox();
             this.lblDNI = new System.Windows.Forms.Label();
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtSaldo = new System.Windows.Forms.TextBox();
             this.lblSaldo = new System.Windows.Forms.Label();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -68,6 +68,7 @@ namespace Formularios
             // chkNocturno
             // 
             this.chkNocturno.Location = new System.Drawing.Point(289, 12);
+            this.chkNocturno.CheckedChanged += new System.EventHandler(this.chkNocturno_CheckedChanged);
             // 
             // btnBuscarUsuario
             // 
@@ -88,15 +89,15 @@ namespace Formularios
             this.btnBuscarUsuario.Text = "Buscar";
             this.btnBuscarUsuario.UseVisualStyleBackColor = false;
             // 
-            // txtBuscarUsuario
+            // txtBuscarCliente
             // 
-            this.txtBuscarUsuario.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.txtBuscarUsuario.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtBuscarUsuario.ForeColor = System.Drawing.Color.Black;
-            this.txtBuscarUsuario.Location = new System.Drawing.Point(12, 24);
-            this.txtBuscarUsuario.Name = "txtBuscarUsuario";
-            this.txtBuscarUsuario.Size = new System.Drawing.Size(217, 17);
-            this.txtBuscarUsuario.TabIndex = 68;
+            this.txtBuscarCliente.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtBuscarCliente.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtBuscarCliente.ForeColor = System.Drawing.Color.Black;
+            this.txtBuscarCliente.Location = new System.Drawing.Point(12, 24);
+            this.txtBuscarCliente.Name = "txtBuscarCliente";
+            this.txtBuscarCliente.Size = new System.Drawing.Size(217, 17);
+            this.txtBuscarCliente.TabIndex = 68;
             // 
             // lblBuscar
             // 
@@ -172,50 +173,25 @@ namespace Formularios
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.Nombre,
-            this.CUIL,
-            this.Alias,
-            this.Contrasenia,
-            this.Tipo});
+            this.DNI,
+            this.Telefono,
+            this.Direccion,
+            this.Saldo});
             this.dgvDatos.Location = new System.Drawing.Point(12, 281);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowTemplate.Height = 25;
             this.dgvDatos.Size = new System.Drawing.Size(312, 151);
             this.dgvDatos.TabIndex = 77;
             // 
-            // Nombre
+            // txtDireccion
             // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // CUIL
-            // 
-            this.CUIL.HeaderText = "CUIL";
-            this.CUIL.Name = "CUIL";
-            // 
-            // Alias
-            // 
-            this.Alias.HeaderText = "Alias";
-            this.Alias.Name = "Alias";
-            // 
-            // Contrasenia
-            // 
-            this.Contrasenia.HeaderText = "Contraseña";
-            this.Contrasenia.Name = "Contrasenia";
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
-            // 
-            // txtContrasenia
-            // 
-            this.txtContrasenia.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.txtContrasenia.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtContrasenia.ForeColor = System.Drawing.Color.Black;
-            this.txtContrasenia.Location = new System.Drawing.Point(12, 210);
-            this.txtContrasenia.Name = "txtContrasenia";
-            this.txtContrasenia.Size = new System.Drawing.Size(217, 17);
-            this.txtContrasenia.TabIndex = 73;
+            this.txtDireccion.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtDireccion.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDireccion.ForeColor = System.Drawing.Color.Black;
+            this.txtDireccion.Location = new System.Drawing.Point(12, 210);
+            this.txtDireccion.Name = "txtDireccion";
+            this.txtDireccion.Size = new System.Drawing.Size(217, 17);
+            this.txtDireccion.TabIndex = 73;
             // 
             // lblDireccion
             // 
@@ -228,15 +204,15 @@ namespace Formularios
             this.lblDireccion.TabIndex = 81;
             this.lblDireccion.Text = "Direccion";
             // 
-            // txtAlias
+            // txtTelefono
             // 
-            this.txtAlias.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.txtAlias.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtAlias.ForeColor = System.Drawing.Color.Black;
-            this.txtAlias.Location = new System.Drawing.Point(12, 170);
-            this.txtAlias.Name = "txtAlias";
-            this.txtAlias.Size = new System.Drawing.Size(217, 17);
-            this.txtAlias.TabIndex = 72;
+            this.txtTelefono.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtTelefono.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtTelefono.ForeColor = System.Drawing.Color.Black;
+            this.txtTelefono.Location = new System.Drawing.Point(12, 170);
+            this.txtTelefono.Name = "txtTelefono";
+            this.txtTelefono.Size = new System.Drawing.Size(217, 17);
+            this.txtTelefono.TabIndex = 72;
             // 
             // lblTelefono
             // 
@@ -249,15 +225,15 @@ namespace Formularios
             this.lblTelefono.TabIndex = 80;
             this.lblTelefono.Text = "Telefono";
             // 
-            // txtCuil
+            // txtDni
             // 
-            this.txtCuil.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.txtCuil.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.txtCuil.ForeColor = System.Drawing.Color.Black;
-            this.txtCuil.Location = new System.Drawing.Point(12, 132);
-            this.txtCuil.Name = "txtCuil";
-            this.txtCuil.Size = new System.Drawing.Size(217, 17);
-            this.txtCuil.TabIndex = 71;
+            this.txtDni.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtDni.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtDni.ForeColor = System.Drawing.Color.Black;
+            this.txtDni.Location = new System.Drawing.Point(12, 132);
+            this.txtDni.Name = "txtDni";
+            this.txtDni.Size = new System.Drawing.Size(217, 17);
+            this.txtDni.TabIndex = 71;
             // 
             // lblDNI
             // 
@@ -292,15 +268,15 @@ namespace Formularios
             this.lblNombre.TabIndex = 78;
             this.lblNombre.Text = "Nombre";
             // 
-            // textBox1
+            // txtSaldo
             // 
-            this.textBox1.BackColor = System.Drawing.Color.CornflowerBlue;
-            this.textBox1.BorderStyle = System.Windows.Forms.BorderStyle.None;
-            this.textBox1.ForeColor = System.Drawing.Color.Black;
-            this.textBox1.Location = new System.Drawing.Point(12, 251);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(217, 17);
-            this.textBox1.TabIndex = 83;
+            this.txtSaldo.BackColor = System.Drawing.Color.CornflowerBlue;
+            this.txtSaldo.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.txtSaldo.ForeColor = System.Drawing.Color.Black;
+            this.txtSaldo.Location = new System.Drawing.Point(12, 251);
+            this.txtSaldo.Name = "txtSaldo";
+            this.txtSaldo.Size = new System.Drawing.Size(217, 17);
+            this.txtSaldo.TabIndex = 83;
             // 
             // lblSaldo
             // 
@@ -313,25 +289,50 @@ namespace Formularios
             this.lblSaldo.TabIndex = 84;
             this.lblSaldo.Text = "Saldo";
             // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // DNI
+            // 
+            this.DNI.HeaderText = "DNI";
+            this.DNI.Name = "DNI";
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
+            // Direccion
+            // 
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            // 
+            // Saldo
+            // 
+            this.Saldo.HeaderText = "Saldo";
+            this.Saldo.Name = "Saldo";
+            // 
             // FormABMCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(336, 444);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtSaldo);
             this.Controls.Add(this.lblSaldo);
             this.Controls.Add(this.btnBuscarUsuario);
-            this.Controls.Add(this.txtBuscarUsuario);
+            this.Controls.Add(this.txtBuscarCliente);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.btnAgregar);
             this.Controls.Add(this.btnBorrar);
             this.Controls.Add(this.btnModificar);
             this.Controls.Add(this.dgvDatos);
-            this.Controls.Add(this.txtContrasenia);
+            this.Controls.Add(this.txtDireccion);
             this.Controls.Add(this.lblDireccion);
-            this.Controls.Add(this.txtAlias);
+            this.Controls.Add(this.txtTelefono);
             this.Controls.Add(this.lblTelefono);
-            this.Controls.Add(this.txtCuil);
+            this.Controls.Add(this.txtDni);
             this.Controls.Add(this.lblDNI);
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
@@ -341,23 +342,23 @@ namespace Formularios
             this.Controls.SetChildIndex(this.lblNombre, 0);
             this.Controls.SetChildIndex(this.txtNombre, 0);
             this.Controls.SetChildIndex(this.lblDNI, 0);
-            this.Controls.SetChildIndex(this.txtCuil, 0);
+            this.Controls.SetChildIndex(this.txtDni, 0);
             this.Controls.SetChildIndex(this.lblTelefono, 0);
-            this.Controls.SetChildIndex(this.txtAlias, 0);
+            this.Controls.SetChildIndex(this.txtTelefono, 0);
             this.Controls.SetChildIndex(this.lblDireccion, 0);
-            this.Controls.SetChildIndex(this.txtContrasenia, 0);
+            this.Controls.SetChildIndex(this.txtDireccion, 0);
             this.Controls.SetChildIndex(this.dgvDatos, 0);
             this.Controls.SetChildIndex(this.btnModificar, 0);
             this.Controls.SetChildIndex(this.btnBorrar, 0);
             this.Controls.SetChildIndex(this.btnAgregar, 0);
             this.Controls.SetChildIndex(this.lblBuscar, 0);
-            this.Controls.SetChildIndex(this.txtBuscarUsuario, 0);
+            this.Controls.SetChildIndex(this.txtBuscarCliente, 0);
             this.Controls.SetChildIndex(this.btnBuscarUsuario, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.lblTema, 0);
             this.Controls.SetChildIndex(this.chkNocturno, 0);
             this.Controls.SetChildIndex(this.lblSaldo, 0);
-            this.Controls.SetChildIndex(this.textBox1, 0);
+            this.Controls.SetChildIndex(this.txtSaldo, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -367,26 +368,26 @@ namespace Formularios
         #endregion
 
         protected System.Windows.Forms.Button btnBuscarUsuario;
-        private System.Windows.Forms.TextBox txtBuscarUsuario;
+        private System.Windows.Forms.TextBox txtBuscarCliente;
         private System.Windows.Forms.Label lblBuscar;
         protected System.Windows.Forms.Button btnAgregar;
         protected System.Windows.Forms.Button btnBorrar;
         protected System.Windows.Forms.Button btnModificar;
         protected System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CUIL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Contrasenia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
-        protected System.Windows.Forms.TextBox txtContrasenia;
+        protected System.Windows.Forms.TextBox txtDireccion;
         public System.Windows.Forms.Label lblDireccion;
-        protected System.Windows.Forms.TextBox txtAlias;
+        protected System.Windows.Forms.TextBox txtTelefono;
         public System.Windows.Forms.Label lblTelefono;
-        protected System.Windows.Forms.TextBox txtCuil;
+        protected System.Windows.Forms.TextBox txtDni;
         public System.Windows.Forms.Label lblDNI;
         protected System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.Label lblNombre;
-        protected System.Windows.Forms.TextBox textBox1;
+        protected System.Windows.Forms.TextBox txtSaldo;
         public System.Windows.Forms.Label lblSaldo;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
+        private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Saldo;
     }
 }

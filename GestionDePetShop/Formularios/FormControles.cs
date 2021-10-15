@@ -86,7 +86,8 @@ namespace Formularios
 
         private void btnModificarPetShop_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Botón sin código");
+            FormModificarPetShop frmModifPetShop = new FormModificarPetShop(chkNocturno.CheckState);
+            frmModifPetShop.ShowDialog();
         }
 
         private void btnInformeVentas_Click(object sender, EventArgs e)
@@ -113,12 +114,14 @@ namespace Formularios
 
         private void btnAdministrarProducto_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Botón sin código");
+            FormABMProducto frmABMProducto = new FormABMProducto(chkNocturno.CheckState);
+            frmABMProducto.ShowDialog();
         }
 
         private void btnAdministrarCliente_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Botón sin código");
+            FormABMCliente frmCliente = new FormABMCliente(chkNocturno.CheckState);
+            frmCliente.ShowDialog();
         }
     }
 }

@@ -9,3 +9,4 @@ C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-C
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Entidades\obj\Debug\net5.0\Entidades.dll
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Entidades\obj\Debug\net5.0\ref\Entidades.dll
 C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Entidades\obj\Debug\net5.0\Entidades.pdb
+C:\Users\nchur\Documents\Nahu\UTN\2_SegundoCuatrimestre\ProgramacionII\RPPL-2E-Churgovich-Nahuel\GestionDePetShop\Entidades\obj\Debug\net5.0\Entidades.csproj.AssemblyReference.cache
