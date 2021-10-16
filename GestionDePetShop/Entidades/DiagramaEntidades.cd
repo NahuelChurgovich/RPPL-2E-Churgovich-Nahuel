@@ -1,70 +1,70 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
   <Class Name="Entidades.Usuarios.Usuario" Collapsed="true">
-    <Position X="5.75" Y="1.5" Width="1.5" />
+    <Position X="10.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>QAAAAkAQAAYAEACAAAQggAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Usuarios\Usuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Usuarios.SuperUsuario" Collapsed="true">
-    <Position X="4" Y="1.5" Width="1.5" />
+    <Position X="9.25" Y="3" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Usuarios\SuperUsuario.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Usuarios.Empleado" Collapsed="true">
-    <Position X="2.25" Y="0.5" Width="1.5" />
+    <Position X="11" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Usuarios\Empleado.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Usuarios.Administrador" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
+    <Position X="9.25" Y="1.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AAAABAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
       <FileName>Usuarios\Administrador.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.PetShop" Collapsed="true">
-    <Position X="5.75" Y="0.5" Width="1.5" />
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AIAAQACAAAAAIAAAgaAAAAAAAAAAAAAAAABCAAAEQEA=</HashCode>
+      <HashCode>AIAAQACAAAAAIAAAgKAAAAAAAAAAAAAAAABCAAAEQEA=</HashCode>
       <FileName>Estaticas\PetShop.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Estaticas.Stock" Collapsed="true">
-    <Position X="2.25" Y="1.5" Width="1.5" />
+    <Position X="6.25" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Stock.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Estaticas.Ventas" Collapsed="true">
-    <Position X="2.25" Y="2.5" Width="1.5" />
+    <Position X="0.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Ventas.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Estaticas.Envios" Collapsed="true">
-    <Position X="4" Y="0.5" Width="1.5" />
+    <Position X="4.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Envios.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Estaticas.Productos" Collapsed="true">
-    <Position X="0.5" Y="1.5" Width="1.5" />
+    <Position X="2.5" Y="1.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <HashCode>AQABBAAAIAAQEACAAAEAAAAAAAAAEAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Productos.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="Entidades.Estaticas.Validaciones" Collapsed="true">
-    <Position X="0.5" Y="2.5" Width="1.5" />
+    <Position X="2.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAQABAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
       <FileName>Estaticas\Validaciones.cs</FileName>

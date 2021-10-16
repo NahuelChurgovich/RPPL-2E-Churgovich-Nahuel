@@ -38,11 +38,6 @@ namespace Formularios
             this.txtNombre = new System.Windows.Forms.TextBox();
             this.lblNombre = new System.Windows.Forms.Label();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CUIL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Alias = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Contrasenia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Tipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnModificar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnAgregar = new System.Windows.Forms.Button();
@@ -100,6 +95,7 @@ namespace Formularios
             this.txtAlias.Name = "txtAlias";
             this.txtAlias.Size = new System.Drawing.Size(217, 17);
             this.txtAlias.TabIndex = 5;
+            this.txtAlias.Click += new System.EventHandler(this.txtAlias_Click);
             // 
             // lblAlias
             // 
@@ -121,6 +117,7 @@ namespace Formularios
             this.txtCuil.Name = "txtCuil";
             this.txtCuil.Size = new System.Drawing.Size(217, 17);
             this.txtCuil.TabIndex = 4;
+            this.txtCuil.Click += new System.EventHandler(this.txtCuil_Click);
             // 
             // lblCuil
             // 
@@ -143,6 +140,7 @@ namespace Formularios
             this.txtNombre.Name = "txtNombre";
             this.txtNombre.Size = new System.Drawing.Size(217, 17);
             this.txtNombre.TabIndex = 3;
+            this.txtNombre.Click += new System.EventHandler(this.txtNombre_Click);
             // 
             // lblNombre
             // 
@@ -159,42 +157,11 @@ namespace Formularios
             // 
             this.dgvDatos.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.CUIL,
-            this.Alias,
-            this.Contrasenia,
-            this.Tipo});
             this.dgvDatos.Location = new System.Drawing.Point(12, 281);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowTemplate.Height = 25;
             this.dgvDatos.Size = new System.Drawing.Size(312, 151);
             this.dgvDatos.TabIndex = 11;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // CUIL
-            // 
-            this.CUIL.HeaderText = "CUIL";
-            this.CUIL.Name = "CUIL";
-            // 
-            // Alias
-            // 
-            this.Alias.HeaderText = "Alias";
-            this.Alias.Name = "Alias";
-            // 
-            // Contrasenia
-            // 
-            this.Contrasenia.HeaderText = "Contraseña";
-            this.Contrasenia.Name = "Contrasenia";
-            // 
-            // Tipo
-            // 
-            this.Tipo.HeaderText = "Tipo";
-            this.Tipo.Name = "Tipo";
             // 
             // btnModificar
             // 
@@ -214,6 +181,7 @@ namespace Formularios
             this.btnModificar.TabIndex = 8;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // btnBorrar
             // 
@@ -233,6 +201,7 @@ namespace Formularios
             this.btnBorrar.TabIndex = 9;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnAgregar
             // 
@@ -252,6 +221,7 @@ namespace Formularios
             this.btnAgregar.TabIndex = 7;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // txtBuscarUsuario
             // 
@@ -292,6 +262,7 @@ namespace Formularios
             this.btnBuscarUsuario.TabIndex = 2;
             this.btnBuscarUsuario.Text = "Buscar";
             this.btnBuscarUsuario.UseVisualStyleBackColor = false;
+            this.btnBuscarUsuario.Click += new System.EventHandler(this.btnBuscarUsuario_Click);
             // 
             // FormABMUsuario
             // 
@@ -314,7 +285,7 @@ namespace Formularios
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Name = "FormABMUsuario";
-            this.Text = "FormABMUsuario";
+            this.Text = "Administrar Usuario";
             this.Load += new System.EventHandler(this.FormABMUsuario_Load);
             this.Controls.SetChildIndex(this.lblNombre, 0);
             this.Controls.SetChildIndex(this.txtNombre, 0);
@@ -351,11 +322,6 @@ namespace Formularios
         protected System.Windows.Forms.TextBox txtNombre;
         public System.Windows.Forms.Label lblNombre;
         protected System.Windows.Forms.DataGridView dgvDatos;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn CUIL;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Alias;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Contrasenia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Tipo;
         protected System.Windows.Forms.Button btnModificar;
         protected System.Windows.Forms.Button btnBorrar;
         protected System.Windows.Forms.Button btnAgregar;

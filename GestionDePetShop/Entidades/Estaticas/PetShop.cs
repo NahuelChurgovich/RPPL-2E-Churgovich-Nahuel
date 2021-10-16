@@ -16,6 +16,7 @@ namespace Entidades
         private static string direccion;    //
         private static List<Cliente> clientes;
         public static List<Usuario> usuarios;
+        private static Queue<Ventas> ventas;
         //public static Dictionary<int, string> produc;
 
 
@@ -133,6 +134,41 @@ namespace Entidades
             }
             return -1;
         }
+
+
+        public static int BuscarUsuario(string txtCuil, string txtNombre, string txtAlias)
+        {
+            int auxIndex = -1;
+            int auxIndexCuil = BuscarUsuario(txtCuil);
+            int auxIndexNombre = BuscarUsuario(txtNombre);
+            int auxIndexALias = BuscarUsuario(txtAlias);
+
+            if (auxIndexCuil != -1)
+            {
+                return auxIndexCuil;
+            }
+            else if (auxIndexNombre != -1)
+            {
+                return auxIndexNombre;
+            }
+            else if (auxIndexALias != -1)
+            {
+                return auxIndexALias;
+            }            
+            return auxIndex;
+        }
+
+
+        public static bool BorrarUsuario(int indice)
+        {
+            if (usuarios.Remove(usuarios[indice]))
+            {
+                return true;
+            }
+            return false;
+        }
+
+
 
 
         //public static bool CrearUsuario(Usuario ingresante, Usuario usuarioACrear)

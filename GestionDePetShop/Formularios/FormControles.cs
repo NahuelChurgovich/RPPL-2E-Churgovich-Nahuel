@@ -92,23 +92,25 @@ namespace Formularios
 
         private void btnInformeVentas_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Botón sin código");
+            FormInfoVentas frmInfoVentas = new FormInfoVentas(chkNocturno.CheckState);
+            frmInfoVentas.ShowDialog();
         }
 
         private void btnVender_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Botón sin código");
+            FormVenta frmVenta= new FormVenta(chkNocturno.CheckState);
+            frmVenta.ShowDialog();
         }
 
         private void btnAdministrarAdmin_Click(object sender, EventArgs e)
         {
-            FormABMUsuario frmAdmin = new FormABMUsuario(chkNocturno.CheckState);
+            FormABMUsuario frmAdmin = new FormABMUsuario(usuarioForm,chkNocturno.CheckState);
             frmAdmin.ShowDialog();
         }
 
         private void btnAdministrarEmpleado_Click(object sender, EventArgs e)
         {
-            FormABMUsuario frmEmpleado = new FormABMUsuario(chkNocturno.CheckState);
+            FormABMUsuario frmEmpleado = new FormABMUsuario(usuarioForm, chkNocturno.CheckState);
             frmEmpleado.ShowDialog();
         }
 

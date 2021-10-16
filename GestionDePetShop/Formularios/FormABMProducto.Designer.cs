@@ -417,7 +417,7 @@ namespace Formularios
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Name = "FormABMProducto";
-            this.Text = "FormABMProducto";
+            this.Text = "Administrar Producto";
             this.Load += new System.EventHandler(this.FormABMProducto_Load);
             this.Controls.SetChildIndex(this.lblNombre, 0);
             this.Controls.SetChildIndex(this.txtNombre, 0);

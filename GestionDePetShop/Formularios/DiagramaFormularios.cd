@@ -1,2 +1,67 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<ClassDiagram /> 
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Formularios.Generales.FrmBase">
+    <Position X="11.75" Y="0.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAiAABAgAAACAQACCEAAQBAACQAAAAAAAAAA=</HashCode>
+      <FileName>Generales\FormBase.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormLogin">
+    <Position X="8.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAASAAAQAAQACABAACEQAAAEAAAAAAAAAAAEA=</HashCode>
+      <FileName>Generales\FormLogin.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormABMCliente">
+    <Position X="15.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAECCAAAAAACiAgAAOEC1AAQAggAIMIgAAAgA=</HashCode>
+      <FileName>FormABMCliente.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormABMProducto">
+    <Position X="4" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAAAASKAAAAAABOAAJNTcCBEAAAAwAAEIAAABgA=</HashCode>
+      <FileName>FormABMProducto.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormABMUsuario">
+    <Position X="10.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAASaAMAAAAQCAhAACECRAAAAAgAAEIABAAgQ=</HashCode>
+      <FileName>FormABMUsuario.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormControles">
+    <Position X="17.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAACIABGAAgAAAAACAAQAC0BAABCBAAAAAAAIAwEI=</HashCode>
+      <FileName>FormControles.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormModificarPetShop">
+    <Position X="6.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ACAAAAAAACAAAAQAAAiAAQACEAAAAAAAAAAAIAAAAgA=</HashCode>
+      <FileName>FormModificarPetShop.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormVenta">
+    <Position X="13" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAIAAAEAACJEAAAAIAGAAICGMABAgQAAAAAQAgAAFgA=</HashCode>
+      <FileName>FormVenta.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Formularios.FormInfoVentas">
+    <Position X="19.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACEAAAAACAEAAAECAGAAAACEIACAAgBEAAAAACAAAA=</HashCode>
+      <FileName>FormInfoVentas.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

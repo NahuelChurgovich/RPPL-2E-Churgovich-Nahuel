@@ -29,7 +29,7 @@ namespace Formularios
             {
                 CajaTextoOscuro(txtBuscarCliente,txtSaldo)                    ;
                 CajaTextoOscuro(txtNombre, txtDni, txtTelefono, txtDireccion);
-                BotonOscuro(btnBuscarUsuario, btnAgregar, btnModificar);
+                BotonOscuro(btnBuscarCliente, btnAgregar, btnModificar);
                 BotonOscuro(btnBorrar);
                 dgvDatos.BackgroundColor = Color.FromArgb(64, 64, 64);
             }
@@ -37,7 +37,7 @@ namespace Formularios
             {
                 CajaTextoClaro(txtBuscarCliente, txtSaldo);
                 CajaTextoClaro(txtNombre, txtDni, txtTelefono, txtDireccion);
-                BotonClaro(btnBuscarUsuario, btnAgregar, btnModificar);
+                BotonClaro(btnBuscarCliente, btnAgregar, btnModificar);
                 BotonClaro(btnBorrar);
                 dgvDatos.BackgroundColor = Color.RoyalBlue;
 

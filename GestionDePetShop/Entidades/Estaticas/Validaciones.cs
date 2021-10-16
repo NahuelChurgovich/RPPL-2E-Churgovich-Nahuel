@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Entidades.Estaticas
+﻿namespace Entidades.Estaticas
 {
     public static class Validaciones
     {
@@ -27,21 +21,6 @@ namespace Entidades.Estaticas
 
 
             return suma == int.Parse(numero[10].ToString());
-
-        }
-
-        public static bool ValidarNombre(string nombre)
-        {
-            char[] arrayNombre = nombre.ToCharArray();
-            foreach (char letra in nombre)
-            {
-                if (!char.IsLetter(letra) || letra != ' ')
-                {
-                    return false;
-                }
-            }
-            return true;
-
         }
     }
 }

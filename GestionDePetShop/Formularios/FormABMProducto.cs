@@ -23,18 +23,18 @@ namespace Formularios
 
         }
 
-
-
         private void chkNocturno_CheckedChanged(object sender, EventArgs e)
         {
             if (chkNocturno.Checked)
             {
                 CajaTextoOscuro(txtBuscarProducto, txtNombre, txtCodigo, txtMarca);
                 CajaTextoOscuro(txtCosto, txtMargen, txtPrecio, txtDescripcion);
-                                BotonOscuro(btnBuscarProducto, btnAgregar, btnModificar);
+                BotonOscuro(btnBuscarProducto, btnAgregar, btnModificar);
                 BotonOscuro(btnBorrar);
-                                cmbTipo.BackColor = Color.FromArgb(64, 64, 64);
+                cmbTipo.BackColor = Color.FromArgb(64, 64, 64);
+                cmbTipo.ForeColor = Color.White;
                 nudCant.BackColor = Color.FromArgb(64, 64, 64);
+                nudCant.ForeColor = Color.White;
             }
             else
             {
@@ -43,8 +43,10 @@ namespace Formularios
                 BotonClaro(btnBuscarProducto, btnAgregar, btnModificar);
                 BotonClaro(btnBorrar);
                 cmbTipo.BackColor = Color.RoyalBlue;
+                cmbTipo.ForeColor = Color.Black;
                 nudCant.BackColor = Color.RoyalBlue;
-                            }
+                nudCant.ForeColor = Color.Black;
+            }
         }
     }
 }

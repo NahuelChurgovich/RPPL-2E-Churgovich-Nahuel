@@ -29,13 +29,18 @@ namespace Formularios
         /// </summary>
         private void InitializeComponent()
         {
-            this.btnBuscarUsuario = new System.Windows.Forms.Button();
+            this.btnBuscarCliente = new System.Windows.Forms.Button();
             this.txtBuscarCliente = new System.Windows.Forms.TextBox();
             this.lblBuscar = new System.Windows.Forms.Label();
             this.btnAgregar = new System.Windows.Forms.Button();
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
+            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -46,11 +51,6 @@ namespace Formularios
             this.lblNombre = new System.Windows.Forms.Label();
             this.txtSaldo = new System.Windows.Forms.TextBox();
             this.lblSaldo = new System.Windows.Forms.Label();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
@@ -70,24 +70,24 @@ namespace Formularios
             this.chkNocturno.Location = new System.Drawing.Point(289, 12);
             this.chkNocturno.CheckedChanged += new System.EventHandler(this.chkNocturno_CheckedChanged);
             // 
-            // btnBuscarUsuario
+            // btnBuscarCliente
             // 
-            this.btnBuscarUsuario.BackColor = System.Drawing.Color.Transparent;
-            this.btnBuscarUsuario.BackgroundImage = global::Formularios.Properties.Resources.boton2;
-            this.btnBuscarUsuario.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.btnBuscarUsuario.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnBuscarUsuario.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
-            this.btnBuscarUsuario.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnBuscarUsuario.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
-            this.btnBuscarUsuario.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBuscarUsuario.Font = new System.Drawing.Font("EngraversGothic BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.btnBuscarUsuario.ForeColor = System.Drawing.Color.Black;
-            this.btnBuscarUsuario.Location = new System.Drawing.Point(77, 47);
-            this.btnBuscarUsuario.Name = "btnBuscarUsuario";
-            this.btnBuscarUsuario.Size = new System.Drawing.Size(90, 32);
-            this.btnBuscarUsuario.TabIndex = 69;
-            this.btnBuscarUsuario.Text = "Buscar";
-            this.btnBuscarUsuario.UseVisualStyleBackColor = false;
+            this.btnBuscarCliente.BackColor = System.Drawing.Color.Transparent;
+            this.btnBuscarCliente.BackgroundImage = global::Formularios.Properties.Resources.boton2;
+            this.btnBuscarCliente.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnBuscarCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnBuscarCliente.FlatAppearance.BorderColor = System.Drawing.Color.RoyalBlue;
+            this.btnBuscarCliente.FlatAppearance.MouseDownBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBuscarCliente.FlatAppearance.MouseOverBackColor = System.Drawing.Color.RoyalBlue;
+            this.btnBuscarCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBuscarCliente.Font = new System.Drawing.Font("EngraversGothic BT", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnBuscarCliente.ForeColor = System.Drawing.Color.Black;
+            this.btnBuscarCliente.Location = new System.Drawing.Point(77, 47);
+            this.btnBuscarCliente.Name = "btnBuscarCliente";
+            this.btnBuscarCliente.Size = new System.Drawing.Size(90, 32);
+            this.btnBuscarCliente.TabIndex = 69;
+            this.btnBuscarCliente.Text = "Buscar";
+            this.btnBuscarCliente.UseVisualStyleBackColor = false;
             // 
             // txtBuscarCliente
             // 
@@ -182,6 +182,31 @@ namespace Formularios
             this.dgvDatos.RowTemplate.Height = 25;
             this.dgvDatos.Size = new System.Drawing.Size(312, 151);
             this.dgvDatos.TabIndex = 77;
+            // 
+            // Nombre
+            // 
+            this.Nombre.HeaderText = "Nombre";
+            this.Nombre.Name = "Nombre";
+            // 
+            // DNI
+            // 
+            this.DNI.HeaderText = "DNI";
+            this.DNI.Name = "DNI";
+            // 
+            // Telefono
+            // 
+            this.Telefono.HeaderText = "Telefono";
+            this.Telefono.Name = "Telefono";
+            // 
+            // Direccion
+            // 
+            this.Direccion.HeaderText = "Direccion";
+            this.Direccion.Name = "Direccion";
+            // 
+            // Saldo
+            // 
+            this.Saldo.HeaderText = "Saldo";
+            this.Saldo.Name = "Saldo";
             // 
             // txtDireccion
             // 
@@ -289,31 +314,6 @@ namespace Formularios
             this.lblSaldo.TabIndex = 84;
             this.lblSaldo.Text = "Saldo";
             // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // DNI
-            // 
-            this.DNI.HeaderText = "DNI";
-            this.DNI.Name = "DNI";
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            // 
-            // Saldo
-            // 
-            this.Saldo.HeaderText = "Saldo";
-            this.Saldo.Name = "Saldo";
-            // 
             // FormABMCliente
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 17F);
@@ -321,7 +321,7 @@ namespace Formularios
             this.ClientSize = new System.Drawing.Size(336, 444);
             this.Controls.Add(this.txtSaldo);
             this.Controls.Add(this.lblSaldo);
-            this.Controls.Add(this.btnBuscarUsuario);
+            this.Controls.Add(this.btnBuscarCliente);
             this.Controls.Add(this.txtBuscarCliente);
             this.Controls.Add(this.lblBuscar);
             this.Controls.Add(this.btnAgregar);
@@ -337,7 +337,7 @@ namespace Formularios
             this.Controls.Add(this.txtNombre);
             this.Controls.Add(this.lblNombre);
             this.Name = "FormABMCliente";
-            this.Text = "FormABMCliente";
+            this.Text = "Administrar Clientes";
             this.Load += new System.EventHandler(this.FormABMCliente_Load);
             this.Controls.SetChildIndex(this.lblNombre, 0);
             this.Controls.SetChildIndex(this.txtNombre, 0);
@@ -353,7 +353,7 @@ namespace Formularios
             this.Controls.SetChildIndex(this.btnAgregar, 0);
             this.Controls.SetChildIndex(this.lblBuscar, 0);
             this.Controls.SetChildIndex(this.txtBuscarCliente, 0);
-            this.Controls.SetChildIndex(this.btnBuscarUsuario, 0);
+            this.Controls.SetChildIndex(this.btnBuscarCliente, 0);
             this.Controls.SetChildIndex(this.btnSalir, 0);
             this.Controls.SetChildIndex(this.lblTema, 0);
             this.Controls.SetChildIndex(this.chkNocturno, 0);
@@ -367,7 +367,7 @@ namespace Formularios
 
         #endregion
 
-        protected System.Windows.Forms.Button btnBuscarUsuario;
+        protected System.Windows.Forms.Button btnBuscarCliente;
         private System.Windows.Forms.TextBox txtBuscarCliente;
         private System.Windows.Forms.Label lblBuscar;
         protected System.Windows.Forms.Button btnAgregar;

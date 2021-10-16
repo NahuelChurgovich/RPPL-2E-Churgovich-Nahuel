@@ -135,6 +135,7 @@ namespace Formularios
             this.btnModificar.TabIndex = 20;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // FormModificarPetShop
             // 
@@ -150,6 +151,7 @@ namespace Formularios
             this.Controls.Add(this.lblRazonSocial);
             this.Name = "FormModificarPetShop";
             this.Text = "FormModificarPetShop";
+            this.Load += new System.EventHandler(this.FormModificarPetShop_Load);
             this.Controls.SetChildIndex(this.lblRazonSocial, 0);
             this.Controls.SetChildIndex(this.txtRazonSocial, 0);
             this.Controls.SetChildIndex(this.lblCuit, 0);

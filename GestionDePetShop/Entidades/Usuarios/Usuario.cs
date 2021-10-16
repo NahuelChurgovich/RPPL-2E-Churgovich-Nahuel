@@ -1,5 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Text;
+﻿using System.Text;
 
 using Entidades.Estaticas;
 
@@ -10,9 +9,9 @@ namespace Entidades.Usuarios
 
         #region Atributos
 
-        private string alias;
         private string nombre;
         private long cuil;
+        private string alias;      
         private string contrasenia;
 
         #endregion
@@ -50,10 +49,7 @@ namespace Entidades.Usuarios
             }
             set
             {
-                if (Validaciones.ValidarNombre(value))
-                {
-                    nombre = value;
-                }
+                nombre = value;
             }
         }
         public long Cuil
