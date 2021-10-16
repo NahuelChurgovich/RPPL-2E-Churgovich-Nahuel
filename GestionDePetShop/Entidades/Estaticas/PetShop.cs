@@ -1,5 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.Text;
 
 using Entidades.Estaticas;
@@ -14,9 +13,9 @@ namespace Entidades
         private static string razonSocial;  //
         private static long cuit;           //ESTOS ATRIBUTOS LOS VOY A USAR PARA EL TICKET
         private static string direccion;    //
-        private static List<Cliente> clientes;
+        public static List<Cliente> clientes;
         public static List<Usuario> usuarios;
-        private static Queue<Ventas> ventas;
+        //private static Queue<Ventas> ventas;
         //public static Dictionary<int, string> produc;
 
 
@@ -91,23 +90,18 @@ namespace Entidades
             }
         }
 
+        public static int CantidadClientes
+        {
+            get
+            {
+                return clientes.Count;
+            }
+        }
+
 
         #endregion
 
         #region Métodos
-
-        //public static string ListarUsuarios()
-        //{
-        //    StringBuilder sb = new StringBuilder();
-
-        //    sb.AppendFormat("Existen {0} usuarios registrados\n", PetShop.usuarios.Count);
-
-        //    foreach (Usuario u in PetShop.usuarios)
-        //    {
-        //        sb.AppendLine(u.Mostrar());
-        //    }
-        //    return sb.ToString();
-        //}
 
         public static bool BuscarUsuario(Usuario usuario)
         {
@@ -135,7 +129,6 @@ namespace Entidades
             return -1;
         }
 
-
         public static int BuscarUsuario(string txtCuil, string txtNombre, string txtAlias)
         {
             int auxIndex = -1;
@@ -154,7 +147,7 @@ namespace Entidades
             else if (auxIndexALias != -1)
             {
                 return auxIndexALias;
-            }            
+            }
             return auxIndex;
         }
 
@@ -168,70 +161,58 @@ namespace Entidades
             return false;
         }
 
+        public static bool BuscarCliente(Cliente cliente)
+        {
+            foreach (Cliente c in PetShop.clientes)
+            {
+                if (cliente.Dni == c.Dni)
+                {
+                    return true;
+                }
+            }
+            return false;
+        }
 
+        public static int BuscarCliente(string dato)
+        {
+            int auxIndex = -1;
+            foreach (Cliente c in PetShop.clientes)
+            {
+                auxIndex++;
+                if (c.Nombre.ToUpper() == dato.ToUpper() || c.Dni.ToString() == dato || c.Telefono.ToString() == dato
+                    || c.Direccion.ToString() == dato)
+                {
+                    return auxIndex;
+                }
+            }
+            return -1;
+        }
 
+        public static int BuscarCliente(string txtNombre, string txtDni)
+        {
+            int auxIndex = -1;
+            int auxIndexNombre = BuscarCliente(txtNombre);
+            int auxIndexDni = BuscarCliente(txtDni);
 
-        //public static bool CrearUsuario(Usuario ingresante, Usuario usuarioACrear)
-        //{
-        //    if (ingresante.Tipo is EUsuarios.SuperUsuario && !BuscarUsuario(usuarioACrear))
-        //    {
-        //        usuarios.Add(usuarioACrear);
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public static bool ModificarUsuario(Usuario ingresante, Usuario usuarioAModificar, string nombre)
-        //{
-        //    if (ingresante.Tipo is EUsuarios.SuperUsuario && BuscarUsuario(usuarioAModificar))
-        //    {
-        //        usuarioAModificar.Nombre = nombre;
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public static bool ModificarUsuario(Usuario ingresante, Usuario usuarioAModificar, double cuil)
-        //{
-        //    if (ingresante.Tipo is EUsuarios.SuperUsuario && BuscarUsuario(usuarioAModificar))
-        //    {
-        //        usuarioAModificar.Cuil = cuil;
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public static bool ModificarUsuario(Usuario ingresante, Usuario usuarioAModificar, EUsuarios tipo)
-        //{
-        //    if (ingresante.Tipo is EUsuarios.SuperUsuario && BuscarUsuario(usuarioAModificar))
-        //    {
-        //        usuarioAModificar.Tipo = tipo;
-        //        return true;
-        //    }
-        //    return false;
-        //}
+            if (auxIndexNombre != -1)
+            {
+                return auxIndexNombre;
+            }
+            else if (auxIndexDni != -1)
+            {
+                return auxIndexDni;
+            }
+            return auxIndex;
+        }
 
-        //public static string ListarClientes(Cliente cliente)
-        //{
-        //    StringBuilder sb = new StringBuilder();
-
-        //    sb.AppendFormat("Existen {0} usuarios registrados\n", PetShop.usuarios.Count);
-
-        //    foreach (Cliente c in PetShop.clientes)
-        //    {
-        //        sb.AppendLine(c.Mostrar());
-        //    }
-        //    return sb.ToString();
-        //}
-
-        //public static bool BuscarCliente(Cliente cliente)
-        //{
-        //    foreach (Cliente u in PetShop.clientes)
-        //    {
-        //        if (cliente.Dni == u.Dni)
-        //        {
-        //            return true;
-        //        }
-        //    }
-        //    return false;
-        //}
+        public static bool BorrarCliente(int indice)
+        {
+            if (clientes.Remove(clientes[indice]))
+            {
+                return true;
+            }
+            return false;
+        }
 
         //public static bool BorrarCliente(Usuario ingresante, Cliente clienteABorrar)
         //{
@@ -243,33 +224,7 @@ namespace Entidades
         //    return false;
         //}
 
-        //public static bool CrearCliente(Usuario ingresante, Cliente clienteACrear)
-        //{
-        //    if (!BuscarCliente(clienteACrear) && (ingresante.Tipo is EUsuarios.Administrador || ingresante.Tipo is EUsuarios.Empleado))
-        //    {
-        //        clientes.Add(clienteACrear);
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public static bool ModificarCliente(Usuario ingresante, Cliente clienteAModificar, string direccion)
-        //{
-        //    if (BuscarCliente(clienteAModificar) && (ingresante.Tipo is EUsuarios.Administrador || ingresante.Tipo is EUsuarios.Empleado))
-        //    {
-        //        clienteAModificar.Direccion = direccion;
-        //        return true;
-        //    }
-        //    return false;
-        //}
-        //public static bool ModificarCliente(Usuario ingresante, Cliente clienteAModificar, double telefono)
-        //{
-        //    if (BuscarCliente(clienteAModificar) && (ingresante.Tipo is EUsuarios.Administrador || ingresante.Tipo is EUsuarios.Empleado))
-        //    {
-        //        clienteAModificar.Telefono = telefono;
-        //        return true;
-        //    }
-        //    return false;
-        //}
+
 
         public static string MostrarDatos()
         {
@@ -282,5 +237,5 @@ namespace Entidades
 
         #endregion
 
-           }
+    }
 }

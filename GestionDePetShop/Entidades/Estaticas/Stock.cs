@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Entidades.Estaticas
 {
-    class Stock
+    public static class Stock
     {
     }
 }

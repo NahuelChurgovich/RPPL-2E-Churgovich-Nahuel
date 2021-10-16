@@ -155,6 +155,7 @@ namespace Formularios
             // 
             // dgvDatos
             // 
+            this.dgvDatos.AllowUserToOrderColumns = true;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvDatos.Location = new System.Drawing.Point(12, 281);

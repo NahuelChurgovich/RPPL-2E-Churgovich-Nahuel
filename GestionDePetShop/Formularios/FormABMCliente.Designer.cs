@@ -36,11 +36,6 @@ namespace Formularios
             this.btnBorrar = new System.Windows.Forms.Button();
             this.btnModificar = new System.Windows.Forms.Button();
             this.dgvDatos = new System.Windows.Forms.DataGridView();
-            this.Nombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DNI = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Telefono = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Direccion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Saldo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.txtDireccion = new System.Windows.Forms.TextBox();
             this.lblDireccion = new System.Windows.Forms.Label();
             this.txtTelefono = new System.Windows.Forms.TextBox();
@@ -88,6 +83,7 @@ namespace Formularios
             this.btnBuscarCliente.TabIndex = 69;
             this.btnBuscarCliente.Text = "Buscar";
             this.btnBuscarCliente.UseVisualStyleBackColor = false;
+            this.btnBuscarCliente.Click += new System.EventHandler(this.btnBuscarCliente_Click);
             // 
             // txtBuscarCliente
             // 
@@ -128,6 +124,7 @@ namespace Formularios
             this.btnAgregar.TabIndex = 74;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // btnBorrar
             // 
@@ -147,6 +144,7 @@ namespace Formularios
             this.btnBorrar.TabIndex = 76;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnModificar
             // 
@@ -166,47 +164,18 @@ namespace Formularios
             this.btnModificar.TabIndex = 75;
             this.btnModificar.Text = "Modificar";
             this.btnModificar.UseVisualStyleBackColor = false;
+            this.btnModificar.Click += new System.EventHandler(this.btnModificar_Click);
             // 
             // dgvDatos
             // 
+            this.dgvDatos.AllowUserToOrderColumns = true;
             this.dgvDatos.BackgroundColor = System.Drawing.Color.RoyalBlue;
             this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvDatos.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.Nombre,
-            this.DNI,
-            this.Telefono,
-            this.Direccion,
-            this.Saldo});
             this.dgvDatos.Location = new System.Drawing.Point(12, 281);
             this.dgvDatos.Name = "dgvDatos";
             this.dgvDatos.RowTemplate.Height = 25;
             this.dgvDatos.Size = new System.Drawing.Size(312, 151);
             this.dgvDatos.TabIndex = 77;
-            // 
-            // Nombre
-            // 
-            this.Nombre.HeaderText = "Nombre";
-            this.Nombre.Name = "Nombre";
-            // 
-            // DNI
-            // 
-            this.DNI.HeaderText = "DNI";
-            this.DNI.Name = "DNI";
-            // 
-            // Telefono
-            // 
-            this.Telefono.HeaderText = "Telefono";
-            this.Telefono.Name = "Telefono";
-            // 
-            // Direccion
-            // 
-            this.Direccion.HeaderText = "Direccion";
-            this.Direccion.Name = "Direccion";
-            // 
-            // Saldo
-            // 
-            this.Saldo.HeaderText = "Saldo";
-            this.Saldo.Name = "Saldo";
             // 
             // txtDireccion
             // 
@@ -384,10 +353,5 @@ namespace Formularios
         public System.Windows.Forms.Label lblNombre;
         protected System.Windows.Forms.TextBox txtSaldo;
         public System.Windows.Forms.Label lblSaldo;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Nombre;
-        private System.Windows.Forms.DataGridViewTextBoxColumn DNI;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Telefono;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Direccion;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Saldo;
     }
 }

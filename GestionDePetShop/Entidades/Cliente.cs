@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Entidades
 {
@@ -15,7 +11,7 @@ namespace Entidades
         private double dni;
         private double telefono;
         private string direccion;
-        private  float saldo;
+        private float saldo;
 
         #endregion
 
@@ -29,29 +25,69 @@ namespace Entidades
             this.telefono = telefono;
             this.direccion = direccion;
             this.saldo = SaldoRandom();
-        }
-
-
+        } 
+        
         #endregion
 
 
         #region Propiedades
 
-        //public string Nombre { get; set; }
-        //public double Dni { get; set; }
-        //public double Telefono { get; set; }
-        //public string Direccion { get; set; }
-        //public float Saldo
-        //{
-        //    get
-        //    {
-        //        return saldo;
-        //    }
-        //    set
-        //    {
-        //        saldo = value;
-        //    }
-        //}
+        public string Nombre
+        {
+            get
+            {
+                return this.nombre;
+            }
+            set
+            {
+                this.nombre = value;
+            }
+        }
+        public double Dni
+        {
+            get
+            {
+                return this.dni;
+            }
+            set
+            {
+                this.dni = value;
+            }
+        }
+        public double Telefono
+        {
+            get
+            {
+                return this.telefono;
+            }
+            set
+            {
+                this.telefono = value;
+            }
+        }
+        public string Direccion
+        {
+            get
+            {
+                return this.direccion;
+            }
+            set
+            {
+                this.direccion = value;
+            }
+        }
+        public float Saldo
+        {
+            get
+            {
+                return this.saldo;
+            }
+            set
+            {
+                this.saldo = value;
+            }
+        }
+
 
         #endregion
 
@@ -66,7 +102,7 @@ namespace Entidades
         private float SaldoRandom()
         {
             Random random = new Random();
-            float saldo = random.Next(-200,1501) ;
+            float saldo = random.Next(-200, 1501);
             return saldo;
         }
 

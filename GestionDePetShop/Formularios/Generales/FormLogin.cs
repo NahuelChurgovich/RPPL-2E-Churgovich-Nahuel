@@ -28,6 +28,15 @@ namespace Formularios
             PetShop.usuarios.Add(juanPablo);
             PetShop.usuarios.Add(carolina);
             PetShop.usuarios.Add(nahuel);
+
+            Cliente mabel = new("Mabel J", 24159975, 1548468733, "Mitre 566");
+            Cliente enrique = new("Enrique I", 14568136, 1514162165, "Roldan 44");
+            Cliente juliana = new("Juliana B", 38891239, 1578365813, "Malvinas 222");
+            Cliente sebastian = new("Sebastian R", 34556894, 1524668546, "Pedernera 8899");
+            PetShop.clientes.Add(mabel);
+            PetShop.clientes.Add(enrique);
+            PetShop.clientes.Add(juliana);
+            PetShop.clientes.Add(sebastian);
         }
 
         private void chkNocturno_CheckedChanged(object sender, EventArgs e)

@@ -62,10 +62,7 @@ namespace Formularios
             }
             else
             {
-                txtNombre.Text = string.Empty;
-                txtCuil.Text = string.Empty;
-                txtAlias.Text = string.Empty;
-                txtContrasenia.Text = string.Empty;
+                VaciarTextBox();
                 MessageBox.Show("El usuario no se encontró", "Aviso", MessageBoxButtons.OK,
                    MessageBoxIcon.Information);
             }
@@ -190,10 +187,7 @@ namespace Formularios
 
                     MessageBox.Show("El usuario se agrego con éxito", "Aviso", MessageBoxButtons.OK,
                            MessageBoxIcon.Information);
-                    this.txtCuil.Text = string.Empty;
-                    this.txtNombre.Text = string.Empty;
-                    this.txtContrasenia.Text = string.Empty;
-                    this.txtAlias.Text = string.Empty;
+                    VaciarTextBox();
                     dgvDatos.DataSource = PetShop.usuarios;
                     this.Close();
                 }
