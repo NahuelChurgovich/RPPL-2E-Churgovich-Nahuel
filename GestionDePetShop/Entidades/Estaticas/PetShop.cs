@@ -16,9 +16,7 @@ namespace Entidades
         public static List<Cliente> clientes;
         public static List<Usuario> usuarios;
         //private static Queue<Ventas> ventas;
-        //public static Dictionary<int, string> produc;
-
-
+        
         #endregion
 
         #region Constructor
@@ -30,8 +28,7 @@ namespace Entidades
             direccion = "Alvarez Jonte 744";
             clientes = new List<Cliente>();
             usuarios = new List<Usuario>();
-            //produc = new Dictionary<int, string>();
-        }
+                    }
 
         #endregion
 

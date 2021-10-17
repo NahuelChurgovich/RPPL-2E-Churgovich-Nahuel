@@ -94,6 +94,7 @@ namespace Formularios
             this.btnBuscarProducto.TabIndex = 2;
             this.btnBuscarProducto.Text = "Buscar";
             this.btnBuscarProducto.UseVisualStyleBackColor = false;
+            this.btnBuscarProducto.Click += new System.EventHandler(this.btnBuscarProducto_Click);
             // 
             // txtBuscarProducto
             // 
@@ -153,6 +154,7 @@ namespace Formularios
             this.btnBorrar.TabIndex = 14;
             this.btnBorrar.Text = "Borrar";
             this.btnBorrar.UseVisualStyleBackColor = false;
+            this.btnBorrar.Click += new System.EventHandler(this.btnBorrar_Click);
             // 
             // btnModificar
             // 
