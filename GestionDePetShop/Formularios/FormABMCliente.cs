@@ -133,7 +133,7 @@ namespace Formularios
             else
             {
                 int contador = PetShop.CantidadClientes;
-                if (long.TryParse(txtDni.Text, out long auxDni) && double.TryParse(txtDni.Text, out double auxTel))
+                if (long.TryParse(txtDni.Text, out long auxDni) && double.TryParse(txtTelefono.Text, out double auxTel)&& txtNombre.Text!=string.Empty && txtDireccion.Text != string.Empty)
                 {
                     Cliente nuevoCliente = new Cliente(txtNombre.Text, auxDni, auxTel, txtDireccion.Text);
                     PetShop.clientes.Add(nuevoCliente);

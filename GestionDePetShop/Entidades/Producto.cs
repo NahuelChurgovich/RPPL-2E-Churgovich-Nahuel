@@ -20,18 +20,24 @@
 
         #region Constructor
 
-        public Producto(string nombre, string codigo, string marca, double costo, double margen, int cantidad, string descripcion, EProducto tipo)
+        public Producto(string nombre, string codigo, string marca, double costo, double margen, int cantidad, string descripcion, EProducto tipo):this(costo,margen)
         {
             this.nombre = nombre;
             this.codigo = codigo;
             this.marca = marca;
             this.costo = costo;
             this.margen = margen;
-            this.precio = Precio;
             this.cantidad = cantidad;
             this.descripcion = descripcion;
             this.tipo = tipo;
+            
+            
         }
+        public Producto( double costo, double margen)
+        {
+            this.precio = costo * margen;
+        }
+
         #endregion
 
         #region Propiedades
@@ -64,7 +70,7 @@
         public double Precio
         {
             get { return precio; }
-            set { this.precio = this.costo * this.margen; }
+            set { this.precio = value; }
         }
         public int Cantidad
         {
@@ -85,7 +91,7 @@
         }
         #endregion
 
-
+       
 
 
         #region Enumerado

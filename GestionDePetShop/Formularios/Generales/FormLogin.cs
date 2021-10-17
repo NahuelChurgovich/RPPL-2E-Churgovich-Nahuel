@@ -43,8 +43,8 @@ namespace Formularios
           Producto comidaGato = new("Comida p/ gato","A001", "GatShow",80,1.25,7,"Alimento balanceado de primera calidad",Producto.EProducto.Alimentos);
             Producto comidaPez = new("Comida p/ peces", "A002", "FishShow", 50, 1.25, 3, "Alimento en escamas de primera calidad", Producto.EProducto.Alimentos);
             Producto camita = new("Cama uniespecie","C000", "Camita Calentita",500,1.15,2,"Camita suavecita",Producto.EProducto.Camas);
-          Producto jarabe = new("Jarabe p/ tos","F001", "AnimalFarma",150,1.18,3,"Para aliviar la tos de tu mascota",Producto.EProducto.Farmacia);
-          Producto pulguitas = new("Pulguicida","F002", "AnimalFarma", 90,1.18,2,"Pastilla protectora de pulgas",Producto.EProducto.Farmacia);
+          Producto jarabe = new("Jarabe p/ tos","F000", "AnimalFarma",150,1.18,3,"Para aliviar la tos de tu mascota",Producto.EProducto.Farmacia);
+          Producto pulguitas = new("Pulguicida","F001", "AnimalFarma", 90,1.18,2,"Pastilla protectora de pulgas",Producto.EProducto.Farmacia);
           Producto shampoo = new("Plumas con brillo","H000", "Belleza",58.5,1.2,3,"Shampoo para aves",Producto.EProducto.Higiene);
           Producto pelota = new("Pelota Colorida","J000", "Diversión",200,1.15,1,"Alimento balanceado de primera calidad",Producto.EProducto.Juguetes);
           Producto pelotaCascabel = new("Pelota ruidosa","J001", "Animalia",230,1.15,5,"Alimento balanceado de primera calidad",Producto.EProducto.Juguetes);

@@ -163,7 +163,7 @@ namespace Formularios
             else
             {
                 int contador = PetShop.CantidadUsuarios;
-                if (long.TryParse(txtCuil.Text, out long auxCuil))
+                if (long.TryParse(txtCuil.Text, out long auxCuil)&& txtNombre.Text!=string.Empty&&txtAlias.Text !=string.Empty&&txtContrasenia.Text!=string.Empty)
                 {
                     if (usuarioForm.GetType() == typeof(SuperUsuario))
                     {

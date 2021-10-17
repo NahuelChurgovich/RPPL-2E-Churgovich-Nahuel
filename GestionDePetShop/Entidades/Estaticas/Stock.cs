@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Collections.Generic;
 
 namespace Entidades.Estaticas
 {
@@ -17,13 +13,20 @@ namespace Entidades.Estaticas
         }
 
 
+        public static int CantidadProductosComercializados 
+        {
+            get
+            {
+                return stockExistente.Count;
+            }
+        }
         public static string ObtenerKey(string dato)
         {
             string auxKey = string.Empty;
 
             foreach (Producto p in Stock.stockExistente.Values)
             {
-                if (p.Nombre.ToUpper() == dato.ToUpper() || p.Codigo.ToUpper() == dato.ToUpper() ||p.Marca.ToUpper() == dato.ToUpper())
+                if (p.Nombre.ToUpper() == dato.ToUpper() || p.Codigo.ToUpper() == dato.ToUpper() || p.Marca.ToUpper() == dato.ToUpper())
                 {
                     return p.Codigo;
                 }
@@ -31,7 +34,7 @@ namespace Entidades.Estaticas
             return auxKey;
         }
 
-        public static Producto BuscarPrductoPorKey(string key)
+        public static Producto BuscarProductoPorKey(string key)
         {
             Producto auxProducto = null;
 
